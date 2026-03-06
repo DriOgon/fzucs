@@ -391,6 +391,48 @@ h1 {
   color: #3a4f69;
 }
 
+.teacher-groups {
+  display: grid;
+  gap: 14px;
+}
+
+.teacher-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.teacher-group h3 {
+  margin: 0 0 10px;
+  color: var(--brand-deep);
+  font-size: 1.02rem;
+}
+
+.teacher-name-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.teacher-name-list li {
+  color: #324761;
+  font-size: 0.95rem;
+}
+
+.data-note {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.data-note a {
+  color: var(--brand);
+}
+
 .footer {
   margin-top: 14px;
   background: #0b2344;
@@ -416,6 +458,10 @@ h1 {
   .stats {
     grid-template-columns: 1fr 1fr;
   }
+
+  .teacher-name-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
@@ -427,7 +473,8 @@ h1 {
 
   .news-grid,
   .program-grid,
-  .stats {
+  .stats,
+  .teacher-name-list {
     grid-template-columns: 1fr;
   }
 
