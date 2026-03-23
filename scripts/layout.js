@@ -30,9 +30,12 @@
                 <p class="brand-en">College of Computer and Data Science</p>
               </div>
             </a>
-            <nav class="nav" aria-label="主导航">
-              ${navHtml}
-            </nav>
+            <div class="nav-wrap">
+              <nav class="nav" aria-label="主导航">
+                ${navHtml}
+              </nav>
+              <a class="nav-cta" href="admission.html">报考入口</a>
+            </div>
           </div>
         </header>
       `;
